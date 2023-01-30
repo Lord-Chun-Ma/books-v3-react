@@ -1,5 +1,4 @@
 import BookShow from './BookShow';
-
 import useBooksContext from '../hooks/use-books-context';
 
 function BookList() {
@@ -9,6 +8,7 @@ function BookList() {
     return <BookShow key={book.id} book={book} />;
   });
 
-  return <div className='book-list'>{renderedBooks}</div>;
+  return <div className="book-list">{renderedBooks}</div>;
 }
+
 export default BookList;

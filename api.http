@@ -4,26 +4,26 @@ Content-Type: application/json
 
 ###
 
-#Add a book
+# Create a book
 POST http://localhost:3001/books HTTP/1.1
 Content-Type: application/json
 
 {
-"title": "Harry Potter"
+  "title": "Harry Potter"
 }
 
 ###
 
-#Update the title of the book
+# Update a book
 PUT http://localhost:3001/books/1 HTTP/1.1
 Content-Type: application/json
 
 {
-	"title": "Dark tower"
+  "title": "Dark Tower"
 }
 
 ###
 
-#Delete a book with a particular ID
+# Delete a book
 DELETE http://localhost:3001/books/1 HTTP/1.1
 Content-Type: application/json
